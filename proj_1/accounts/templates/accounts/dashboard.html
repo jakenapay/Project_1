@@ -1,0 +1,82 @@
+{% extends 'accounts/main.html' %}
+
+{% block content %}
+{% include 'accounts/status.html' %}
+
+  <div class="row">
+    {% comment %}TABLE FOR CUSTOMERS{% endcomment %}
+    <div class="col col-md-6 col-lg-6 p-4">
+      <h3 class="">Customers</h3>
+      <hr />
+      <div class="card card-body">
+        <a href="" class="btn btn-dark btn-sm btn-block">Create Customer</a>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Customers</th>
+              <th scope="col">Orders</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Raphael</th>
+              <td>Product 3</td>
+            </tr>
+            <tr>
+              <th scope="row">Dale</th>
+              <td>Product 2</td>
+            </tr>
+            <tr>
+              <th scope="row">Stella</th>
+              <td>Product 1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    {% comment %}TABLE FOR LAST 5 ORDERS{% endcomment %}
+    <div class="col col-md-6 col-lg-6 p-4">
+      <h3 class="">Last 5 Orders</h3>
+      <hr />
+      <div class="card card-body">
+        <a href="" class="btn btn-dark btn-sm btn-block">Create Order</a>
+
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Date Ordered</th>
+              <th scope="col">Status</th>
+              <th scope="col">Update</th>
+              <th scope="col">Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Otto</td>
+              <td>Otto</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Jacob</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>Larry</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+{% endblock %}

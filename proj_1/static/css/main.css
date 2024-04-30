@@ -1,0 +1,25 @@
+#logo {}
+
+body {
+    background-color: #fdfdfd;
+}
+
+#total-orders {
+    background-color: #22333b;
+}
+
+#orders-delivered {
+    background-color: #22333b;
+}
+
+#orders-pending {
+    background-color: #22333b;
+}
+
+#navbar-main {
+    background-color: #0a0908 !important;
+}
+
+#navbar-logo {
+    max-width: 50px;
+}
